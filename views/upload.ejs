@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SSD-Assignment 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+
+    <style>
+      body {
+        padding-top: 50px;
+        word-wrap: break-word;
+      }
+
+      img{
+        border-radius: 50%;
+        width:150px;
+        height:150px;
+        margin-left: 15px;
+      }
+      .wrapper{
+        display: flex
+      }
+      .uname{
+        margin-top: 55px;
+        margin-left: 30px;
+      }
+      .logout{
+        height: 30px;
+        width: 100px;
+        margin-top: 63px;
+        margin-left: 628px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <div class="wrapper">
+            <img src="<%=picture%>"  border-radius="50%" alt="" />
+            <h1 class="uname"><%=name%></h1>    
+            <a href="/logout" class="btn btn-danger btn-sm logout">Logout</a>
+        </div>
+      </div>
+
+      
+        <div class="col-lg-12">
+          <div class="well">
+            <h3 class="text-primary text-center"> Upload File to Google Drive</h3>
+
+            <% if (success) { %>
+            <div class="alert alert-success alert-dismissible">
+              <a class="close" data-dismiss="alert" aria-label="close"></a>
+              <strong>Your File is Uploaded Sucessfully</strong> 
+            </div>
+            <%}%>
+
+            <form action="/uploadFiles" method="POST" enctype="multipart/form-data">
+              <div class="form-group">
+                <input type="file" class="form-control" name="file" id="" required />
+              </div>
+
+              <div class="form-group text-center">
+                <button class="btn btn-primary">Upload File </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
