@@ -2,8 +2,8 @@
 
 # Environment Setup
 
-1. Clone the Repository Using this command
-	git clone https://github.com/Vithushiyan/SSD-OAuth-2.0.git
+1. Clone the Repository Using 'git clone https://github.com/Vithushiyan/SSD-OAuth-2.0.git' command
+	
 	
 2. Open the cloned repository in Visual Studio Code (You can use any source-code editor)
 
