@@ -1,6 +1,6 @@
 # Upload Files to Google Drive using OAuth 2.0
 
-#Environment Setup
+# Environment Setup
 
 1. Clone the Repository Using this command
 	git clone https://github.com/Vithushiyan/SSD-OAuth-2.0.git
@@ -11,10 +11,8 @@
 
 3. Open a new terminal in SSD-OAuth-2.0 folder
 
-4. Install the node modules using this command
-	npm i
-
-5. Run the server.js using this command
-	npm start
+4. Install the node modules using 'npm i' command
+	
+5. Run the server.js using 'npm start' command
 	
 6. Visit ‘http://localhost:4000/’ in your browser. 
